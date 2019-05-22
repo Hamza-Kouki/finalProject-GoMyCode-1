@@ -4,3 +4,9 @@ $('.interests i').on('mouseenter', (e) => {
 $('.interests i').on('mouseleave', (e) => {
     $(e.currentTarget.nextSibling).toggleClass('show')
 })
+
+
+
+
+
+

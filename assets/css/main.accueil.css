@@ -21,7 +21,8 @@ body {
 
 
 
-
+/* ------------------------------------------- */
+/* ------------------------------------------- */
 
 
 
@@ -60,7 +61,8 @@ body {
 
 
 
-
+/* ------------------------------------------- */
+/* ------------------------------------------- */
 
 
 
@@ -69,7 +71,8 @@ body {
         }
 
 
-
+/* ------------------------------------------- */
+/* ------------------------------------------- */
 
  .animated{animation-duration:1s;animation-fill-mode:both}
  .animated.infinite{animation-iteration-count:infinite}
@@ -85,8 +88,83 @@ body {
                      
 
 
-
-
+/* ------------------------------------------- */
+/* ------------------------------------------- */
                      .col-sm-4  {
                         text-align: center!important;
                     }
+
+
+
+
+
+
+                    /* les images */
+.job_home {position:relative; text-align:center; margin:0; float:left; max-width: 600px; background: #000;}
+.job_home a {color:#fff;}
+.job_home a:hover h2 {opacity:1;}
+.job_home img {max-width:100%; vertical-align:middle; opacity:1;}
+.job_home a:hover img {opacity:0.2;}
+.job_home h2 {font-size:46px; text-transform:uppercase; position:absolute; z-index:10; left:0; top:45%; width:100%; opacity:0;}
+.type_job {text-transform:uppercase; font-size:18px ;color:#95a5a6; position:absolute;  left:35%;  bottom:-25px; padding:20px 0; width:30%;}
+.type_job span {background:#FFF; padding:20px;}
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Anaheim);
+
+.containerr{
+	margin: 4% auto;
+	width: 210px;
+	height: 140px;
+	position: relative;
+	perspective: 1000px;
+}
+#carousell{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotation 20s infinite linear;
+}
+#carousell:hover{
+	animation-play-state: paused;
+}
+#carousell figure{
+	display: block;
+	position: absolute;
+	width: 90%;
+	height: 50%px;
+	left: 10px;
+	top: 10px;
+	background: black;
+	overflow: hidden;
+	border: solid 5px black;
+}
+#carousell figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#carousell figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+#carousell figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+#carousell figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#carousell figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#carousell figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#carousell figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#carousell figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#carousell figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+
+.boubou {
+	-webkit-filter: grayscale(1);
+	cursor: pointer;
+	transition: all .5s ease;
+}
+.boubou:hover{
+	-webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
